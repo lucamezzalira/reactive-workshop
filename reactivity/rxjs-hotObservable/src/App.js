@@ -1,9 +1,13 @@
-import Rx from "rxjs";
+import {interval} from 'rxjs';
+import {startWith, publish, refCount} from 'rxjs/operators';
 
-const source = Rx.Observable.interval(2000)
-                            .startWith(123)
-                            .publish()
-                            .refCount();
+const source = interval(2000)
+                .pipe(
+                    startWith(123),
+                    publish(),
+                    refCount()
+                )
+
 
 source.subscribe(value => console.log("first observer", value))
 

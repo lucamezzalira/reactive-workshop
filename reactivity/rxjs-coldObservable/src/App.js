@@ -1,6 +1,6 @@
-import Rx from "rxjs";
+import {interval} from 'rxjs';
 
-const source = Rx.Observable.interval(2000).startWith(123)
+const source = interval(2000);
 
 source.subscribe(value => console.log("first observer", value))
 
