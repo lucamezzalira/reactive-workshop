@@ -1,0 +1,14 @@
+h1{
+    color: darkslateblue;
+    float: left;
+}
+
+img{
+    float: left;
+    padding: 15px;
+}
+
+#coinDataContainer{
+    float: left;
+    width: 98%;
+}

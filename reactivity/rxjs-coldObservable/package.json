@@ -1,0 +1,34 @@
+{
+  "name": "rxjs-coldObservable",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/App.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cp index.html dist/index.html && watchify ./src/App.js -o ./dist/App.js -t [ babelify ]",
+    "build": "browserify ./src/App.js -o ./dist/App.js -t [ babelify ] && cp index.html dist/index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "core-decorators": "latest",
+    "rxjs": "^5.4.2"
+  },
+  "devDependencies": {
+    "babel-cli": "latest",
+    "babel-plugin-transform-decorators-legacy": "latest",
+    "babel-preset-es2015": "latest",
+    "babel-preset-stage-0": "latest",
+    "babelify": "latest",
+    "watchify": "latest"
+  },
+  "babel": {
+    "presets": [
+      "es2015",
+      "stage-0"
+    ],
+    "plugins": [
+      "transform-decorators-legacy"
+    ]
+  }
+}

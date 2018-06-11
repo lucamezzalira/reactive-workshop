@@ -1,0 +1,24 @@
+#formContainer{
+    float: left;
+    height: 50px;
+}
+form{
+    float: left;
+    margin: 5px;
+}
+input{
+    font-weight: bold;
+    font-size: 16px;
+    height: 28px;
+    color: darkslateblue;
+}
+label{
+    font-size: 16px;
+    color: grey;
+}
+button{
+    margin: 5px;
+    float: left;
+    font-size: 18px;
+    padding: 5px;
+}

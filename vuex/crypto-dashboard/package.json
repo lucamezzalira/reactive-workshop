@@ -1,0 +1,43 @@
+{
+  "name": "crypto-dashboard",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/App.js",
+  "scripts": {
+    "step1-init": "./node_modules/.bin/webpack --env ./steps/step1/init/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step1/init/src/App.js",
+    "step1-final": "./node_modules/.bin/webpack --env ./steps/step1/final/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step1/final/src/App.js",
+    "step2-init": "./node_modules/.bin/webpack --env ./steps/step2/init/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step2/init/src/App.js",
+    "step2-final": "./node_modules/.bin/webpack --env ./steps/step2/final/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step2/final/src/App.js",
+    "step3-init": "./node_modules/.bin/webpack --env ./steps/step3/init/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step3/init/src/App.js",
+    "step3-final": "./node_modules/.bin/webpack --env ./steps/step3/final/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step3/final/src/App.js",
+    "step4-init": "./node_modules/.bin/webpack --env ./steps/step4/init/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step4/init/src/App.js",
+    "step4-final": "./node_modules/.bin/webpack --env ./steps/step4/final/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step4/final/src/App.js"
+  },
+  "author": "luca mezzalira",
+  "license": "ISC",
+  "dependencies": {
+    "chart.js": "^2.7.1",
+    "chartjs": "^0.3.24",
+    "echarts": "^3.8.5",
+    "moment": "^2.19.1",
+    "moment-es6": "^1.0.0",
+    "numeral": "^2.0.6",
+    "vue": "^2.5.16",
+    "vue-chartjs": "^3.0.2",
+    "vue-echarts-v3": "^1.0.18",
+    "vuex": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-stage-2": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "^0.28.7",
+    "vue-loader": "^13.3.0",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.5.16",
+    "webpack": "^3.6.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}

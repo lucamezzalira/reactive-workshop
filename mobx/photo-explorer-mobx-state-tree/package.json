@@ -1,0 +1,41 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/App.js",
+  "scripts": {
+    "step1-init": "./node_modules/.bin/webpack --env ./steps/step1/init/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step1/init/src/App.js",
+    "step1-final": "./node_modules/.bin/webpack --env ./steps/step1/final/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step1/final/src/App.js",
+    "step2-init": "./node_modules/.bin/webpack --env ./steps/step2/init/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step2/init/src/App.js",
+    "step2-final": "./node_modules/.bin/webpack --env ./steps/step2/final/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step2/final/src/App.js",
+    "step3-init": "./node_modules/.bin/webpack --env ./steps/step3/init/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step3/init/src/App.js",
+    "step3-final": "./node_modules/.bin/webpack --env ./steps/step3/final/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step3/final/src/App.js",
+    "step4-init": "./node_modules/.bin/webpack --env ./steps/step4/init/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step4/init/src/App.js",
+    "step4-final": "./node_modules/.bin/webpack --env ./steps/step4/final/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./steps/step4/final/src/App.js",
+    "final-generators": "./node_modules/.bin/webpack --env ./final-generators/src/App.js && ./node_modules/.bin/webpack-dev-server --open --compress --env ./final-generators/src/App.js"
+  },
+  "author": "luca mezzalira",
+  "license": "ISC",
+  "dependencies": {
+    "material-ui": "^0.19.2",
+    "mobx": "^4.3.0",
+    "mobx-react": "^5.1.2",
+    "mobx-state-tree": "^2.0.5",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "babel-plugin-transform-decorators": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-regenerator": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "copy-webpack-plugin": "^4.0.1",
+    "webpack": "^3.12.0",
+    "webpack-dev-server": "^2.5.1"
+  }
+}
